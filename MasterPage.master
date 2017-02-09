@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="w3.css" />
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="footer-basic-centered.css" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <div class="w3-content w3-section" style="max-width: 1200px">
+    <form id="form1" runat="server">
+
+        
+        <div id="header" class="menu ">
+                <ul class="w3-navbar w3-blue">
+                    <li><a class="active" href="Home.aspx">Home</a></li>
+                    <li><a href="Recipes.aspx">Recipes</a></li>
+                    <li><a href="AddRecipes.aspx">Add Recipes</a></li>
+                    <li class="right"><a href="Search.aspx">Search</a></li>
+                </ul>
+          </div>    
+        
+        
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            
+       
+        
+               
+           
+        
+    </form>
+        
+        <footer class="footer-basic-centered">
+
+			<p class="footer-company-motto">My Home Recipes Book</p>
+
+			<p class="footer-links">
+				<a href="Home.aspx">Home</a>
+				·
+				<a href="Recipes.aspx">Recipes</a>
+				·
+				<a href="AddRecipes.aspx">Add Recipes</a>
+				·
+				<a href="Search.aspx">Search</a>
+			
+			</p>
+
+			<p class="footer-company-name">Tanmay Parmar &copy; 2017</p>
+
+		</footer>
+         </div>
+        
+</body>
+</html>
